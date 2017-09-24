@@ -1,0 +1,54 @@
+title = "";
+items = (
+   {
+      cell = PSGroupCell;
+      label = "Plan Usage Info";
+   },
+
+   //custom cell 1: Days remaining
+   //custom cell 2: MB remaining
+   {
+      cell = PSGroupCell;
+      label = "LazyLoadThisMofo";
+   },
+   {
+      cell = PSGroupCell;
+      label = "Plan Management";
+      footerText = "To stay accurate, Membrane automatically resets your cellular statistics at the end of your monthly data cycles.";
+      },
+   {
+      cell = PSSwitchCell;
+      cellClass = MembraneSwitchCell;
+      defaults = ca.ndoizo.membrane;
+      key = manage;
+      label = "Auto-Reset Statistics";
+      PostNotification = ca.ndoizo.membrane.changed;
+   },
+   {
+      cell = PSGroupCell;
+      label = "Monthly Allowance";
+      footerText = "Enter monthly data allotment in MegaBytes.\n(Tip:1GB = 1000)\n(Tap 'Tweak' to top-up or subtract from the current month)";
+   },
+   {
+      cell = PSEditTextCell;
+      cellClass = MembraneDataAmtCell;
+      defaults = ca.ndoizo.membrane;
+      key = data;
+      isNumeric = 1;
+      label = "MB per Month:";
+      PostNotification = ca.ndoizo.membrane.changed;
+   },
+   {
+      cell = PSGroupCell;
+      label = "Data Refresh Date";
+      footerText = "Provide a past date that your plan refreshed on (ex: first day of service), it's used to determine the future refresh dates.\n(Tap 'Tweak' for minor adjustment)";
+   },
+   {
+      cell = PSEditTextCell;
+      cellClass = MembraneDatePickerCell;
+      defaults = ca.ndoizo.membrane;
+      key = wordDate;
+      label = "Renewal Date:";
+      PostNotification = ca.ndoizo.membrane.changed;
+   }
+);

@@ -1,0 +1,10 @@
+{
+   entry = {
+   bundle = MembranePrefs;
+   cell = PSLinkCell;
+   detail = MembranePrefsController;
+   icon = Membrane.png;
+   isController = 0;
+   label = Membrane;
+   };
+}

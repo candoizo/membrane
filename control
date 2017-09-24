@@ -1,0 +1,10 @@
+Package: ca.ndoizo.membrane
+Name: Membrane
+Depends: mobilesubstrate
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Grant temporary access to Cell Data for Apps & automatically manage statistics.
+Maintainer: candoizo
+Author: candoizo
+Section: Tweaks
+Icon: file:///Library/PreferenceBundles/MembranePrefs.bundle/Membrane.png
